@@ -1,0 +1,17 @@
+.authentication-box {
+  max-width: 1208px;
+  background-color: var(--color-text-dark);
+  border-radius: 60px;
+  padding: 60px;
+  margin: 0 auto;
+  width: 100%;
+}
+.input-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 20px;
+}
+.form-group-icon input {
+  padding-left: 58px;
+}

@@ -1,0 +1,232 @@
+:root {
+  --color-primary: #fcd331;
+  --color-primary-md: #c2a11b;
+  --color-text: #e3e3e3;
+  --color-text-sm: #ffffff26;
+
+  --color-text-light: #ffffff4d;
+  --color-text-dark: #131315;
+  --color-dark: #0000004d;
+  --color-dark-light: #3b39394d;
+  --font-size: 18px;
+}
+.color-primary-md {
+  color: var(--color-primary-md);
+}
+.color-text-light {
+  color: var(--color-text-light);
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #080500;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+input:focus,
+input,
+button {
+  outline: none;
+  border: none !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: 600;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+.border-primary-md {
+  border: 2px solid var(--color-primary);
+}
+.border-white-sm {
+  border: 1px solid #fff;
+}
+.btn-primary {
+  padding: 18px 22px;
+  border-radius: 100px;
+  background-color: var(--color-primary);
+  color: var(--color-text-dark);
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  text-decoration: none;
+}
+.btn-primary:hover {
+  background-color: var(--color-primary-md);
+  box-shadow: rgba(204, 164, 52, 0.2) 0px 20px 25px 0px;
+}
+.btn-primary-dark {
+  padding: 18px 60px;
+  border-radius: 100px;
+  background-color: var(--color-dark);
+  color: var(--color-text);
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  text-decoration: none;
+}
+.btn-primary-dark:hover {
+  background-color: var(--color-dark-light);
+}
+.pointer {
+  cursor: pointer;
+}
+.label-hover {
+  transition: 0.5s;
+}
+.label-hover:hover {
+  color: var(--color-primary);
+}
+.custom-vh-100 {
+  height: 100vh;
+}
+/* margin */
+.mt-40 {
+  margin-top: 40px;
+}
+/* gap */
+.gap-5 {
+  gap: 5px;
+}
+.gap-10 {
+  gap: 10px;
+}
+.gap-15 {
+  gap: 15px;
+}
+.label {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  color: var(--color-text);
+  margin-bottom: 12px;
+}
+.label-sm {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #c0bfbf;
+  margin-bottom: 12px;
+}
+.form-group input {
+  padding: 16px 24px;
+  border-radius: 10px;
+  font-size: 16px;
+  background: #ffffff14;
+  border: 1px solid transparent !important;
+  color: var(--color-text-light);
+}
+
+.form-group .checkbox-label:before {
+  content: "";
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 1px solid var(--color-text);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
+    inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  padding: 8px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 10px;
+  border-radius: 2px;
+}
+.form-group input:checked + .checkbox-label:before {
+  border-color: var(--color-primary);
+}
+.form-group input:checked + .checkbox-label:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 6px;
+  width: 6px;
+  height: 11px;
+  border: solid var(--color-primary);
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.form-group input::placeholder {
+  color: var(--color-text-light);
+  opacity: 1;
+  font-size: 16px;
+}
+.form-group input:focus {
+  background: var(--color-text-dark);
+  box-shadow: none !important;
+  color: var(--color-text);
+  border: 1px solid var(--color-primary) !important;
+}
+.heading-md {
+  font-weight: 600;
+  font-size: 22px;
+  color: var(--color-text);
+  line-height: 100%;
+}
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: var(--color-text);
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid var(--color-text-sm);
+  margin: 0 14px;
+}
+.blur-card-1 {
+  backdrop-filter: blur(4px);
+  border-radius: 12px;
+  padding: 10px 20px;
+  background: #ffffff24;
+  box-shadow: 0px 2px 6px 0px #00000066;
+}
+.user-count-content span {
+  color: var(--color-primary);
+  font-size: 38px;
+  font-weight: 700;
+}
+.user-count-content h5 {
+  color: #ffffffcc;
+  font-weight: 600;
+  font-size: 18px;
+}
+.user-count-icon img {
+  width: 60px;
+}
+.register-user-count-card-1 {
+  position: absolute;
+  left: 7%;
+  top: 10%;
+}
+.register-user-count-card-2 {
+  position: absolute;
+  right: 0%;
+  top: 40%;
+  transform: scale(0.8);
+}
+.register-user-count-card-2 .user-count-content h5,
+.register-user-count-card-2 .user-count-content span {
+  color: #fff;
+}

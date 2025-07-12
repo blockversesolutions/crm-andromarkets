@@ -1,0 +1,14 @@
+@media all and (max-width: 991px) {
+    .btn-primary,.btn-primary-dark {
+    padding: 16px 20px;
+
+}
+}
+@media all and (max-width: 767px) {
+  .authentication-box {
+    padding: 60px 15px;
+  }
+  .custom-vh-100 {
+    height: auto;
+  }
+}
