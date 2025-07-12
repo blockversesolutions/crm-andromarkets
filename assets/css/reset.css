@@ -3,7 +3,7 @@
   --color-primary-md: #c2a11b;
   --color-text: #e3e3e3;
   --color-text-sm: #ffffff26;
-
+  --color-green:#359846;
   --color-text-light: #ffffff4d;
   --color-text-dark: #131315;
   --color-dark: #0000004d;
@@ -15,6 +15,9 @@
 }
 .color-text-light {
   color: var(--color-text-light);
+}
+.color-text-green{
+  color: var(--color-green);
 }
 body {
   font-family: "Poppins", sans-serif;
@@ -83,6 +86,23 @@ a {
 }
 .btn-primary-dark:hover {
   background-color: var(--color-dark-light);
+}
+.circle-btn{
+  height:50px;
+  width:50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  transition: 0.5s;
+  background-color: var(--color-dark-light);
+}
+.circle-btn i{
+  color:#fff;
+}
+.circle-btn:hover{
+  background-color: var(--color-primary);
 }
 .pointer {
   cursor: pointer;

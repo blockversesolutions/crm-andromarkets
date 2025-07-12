@@ -3,6 +3,15 @@
     padding: 16px 20px;
 
 }
+.user-count-icon img {
+    width: 38px;
+}
+.user-count-content span {
+    font-size: 28px;
+}
+.user-count-content h5 {
+    font-size: 15px;
+}
 }
 @media all and (max-width: 767px) {
   .authentication-box {
@@ -10,5 +19,8 @@
   }
   .custom-vh-100 {
     height: auto;
+  }
+  .authentication-box {
+    min-height: auto;
   }
 }
