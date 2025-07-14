@@ -12,8 +12,12 @@
 .user-count-content h5 {
     font-size: 15px;
 }
+
 }
 @media all and (max-width: 767px) {
+  .authentication{
+  justify-content: start;
+}
   .authentication-box {
     padding: 60px 15px;
   }
@@ -22,5 +26,6 @@
   }
   .authentication-box {
     min-height: auto;
+    height: 100%;
   }
 }

@@ -2,13 +2,11 @@
   max-width: 1208px;
   background-color: var(--color-text-dark);
   border-radius: 60px;
-  padding: 60px;
+  padding:40px 60px;
   margin: 0 auto;
   width: 100%;
   position: relative;
-  display: flex;
-  min-height:650px;
-  justify-content: center;
+ 
 }
 .input-icon {
   position: absolute;
@@ -19,32 +17,68 @@
 .form-group-icon input {
   padding-left: 58px;
 }
-.authentication-box .circle-btn{
-    position: absolute;
-    left: 50px;
-    top: 60px;
+.authentication-box .circle-btn {
+  position: absolute;
+  left: 50px;
+  top: 60px;
 }
- 
+.authentication {
+  min-height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .code-inputs {
-      display: flex;
-      gap: 12px;
-      margin-bottom: 15px;
-    }
+  display: flex;
+  gap: 12px;
+  margin-bottom: 15px;
+}
 
-    .code-inputs input {
-      width: 64px;
-      height: 45px;
-      border:1px solid var(--color-primary) !important;
-      border-radius:100px;
-      background-color: transparent;
-      color: #fff;
-      font-size: 20px;
-      text-align: center;
-      transition: border-color 0.2s;
-    }
-    .error-otp input{
-        border:1px solid #ff5e7e !important;
-    }
-    .valid-otp input{
-        border:1px solid var(--color-green) !important;
-    }
+.code-inputs input {
+  width: 64px;
+  height: 45px;
+  border: 1px solid var(--color-primary) !important;
+  border-radius: 100px;
+  background-color: transparent;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  transition: border-color 0.2s;
+}
+.error-otp input {
+  border: 1px solid #ff5e7e !important;
+}
+.valid-otp input {
+  border: 1px solid var(--color-green) !important;
+}
+/* start country select input css */
+.phone-input-container {
+  position: relative;
+}
+.iti {
+  width: 100%;
+}
+.iti__flag-container {
+  background-color: transparent;
+  border-right: 0;
+}
+
+.iti--allow-dropdown input,
+.iti--allow-dropdown input[type="tel"] {
+  padding-left: 75px !important;
+}
+.iti__selected-flag {
+  padding: 0 10px 0 20px;
+}
+.iti__arrow {
+  margin-left: 10px;
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 5px solid #cabebe;
+}
+.iti__arrow {
+  border-bottom: 0;
+}
+/* end country select input css */
